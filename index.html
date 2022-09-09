@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khung trang</title>
+    <style>
+        *{padding: 0px; margin: auto;}
+        .wrapper{height: 800px; width: 1098px; background-color: aqua;}
+        header{height: 150px; width: 1098px; background-color: antiquewhite;}
+        nav{height: 50px; width: 1098px; background-color: aquamarine;}
+        .content{height: 500px; width: 1098px; background-color: rgb(139, 119, 76);}
+        footer{height: 100px; width: 1098px; background-color: rgb(149, 97, 48);}
+        aside{height: 100%; width: 35%; background-color: rgb(69, 52, 125); float: left;}
+        section{height: 100%; width: 65%; background-color: rgb(3, 23, 46); float: left;}
+        .menu li{float: left; width: 150px; list-style: none; line-height: 50px; text-align: center; position: relative ; background-color: aquamarine;}
+        a{font-weight: bolder; text-decoration: none; }
+        li:hover{background-color: rgb(76, 207, 164); font-style: italic;}
+        li .sub-menu{display: none; position: absolute;}
+        li:hover>.sub-menu{display: block; }
+        li .sub-menu li:hover>.sub-menu{top:0px; left: 150px;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICE</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Xem diem</a>
+                            <ul class="sub-menu">
+                                <li><a href="">HK1</a></li>
+                                <li><a href="">HK2</a></li>
+                                <li><a href="">HK3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Lich hoc</a></li>
+                        <li><a href="">Cong no</a></li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <aside>
+                <form action="">
+                    <label for="name">User Name:</label><br>
+                    <input id="name" name="name" type="text" value=""><br>
+                    
+                    <label for="Password">Password:</label><br>
+                    <input name="pass" type="password" value=""><br>
+
+                    <input type="submit" name="Submit" value="Sign up">
+                </form>
+            </aside>
+
+            <section>
+
+            </section>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
